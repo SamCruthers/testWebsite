@@ -1,0 +1,15 @@
+<h1>Hello World!</h1>
+
+<p> This is my third website</p>
+
+<p>My name is {{first_name}}</p>
+
+<p> {{stuff|safe}}</p><!--striptags in html removes, use instead of safe which utlilise html tags-->
+
+
+{% for topping in favourite_pizza%}
+    {{ topping}}<br/>
+{% endfor %}
+<b>
+{{ favourite_pizza.2 +2}}
+</b>
