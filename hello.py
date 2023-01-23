@@ -9,7 +9,11 @@ from datetime import datetime
 
 app = Flask(__name__)  #helps flask find directories
 #add database
+#old sql db
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+#new mySQL db mysql://username:password@localhost
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:password123@localhost/users'
+
 app.config['SECRET_KEY'] = "a super key"
 #init dbase
 db = SQLAlchemy(app)
